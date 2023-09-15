@@ -1,8 +1,127 @@
-<body>
-    Welcome to Therese's Music Website! I try to listen to as much music as I can, but my favorite genres are:
-    <p>Classical</p>
-    <p>Jazz</p>
-    <p>Pop &#40;all genres&#41;</p>
-    <p>R&#38;B</p>
-    <p>OPM&#40;Original Pinoy Music&#41;</p>
-</body>
+<div class="wrapper">
+    <h1 class="title">Albums for Productivity<h1>
+  </div>
+
+<div class = "albums-container">
+    <div class = "albumphotos">
+    <img src = "albums/Lana_Del_Rey_-_Did_You_Know_That_There's_a_Tunnel_Under_Ocean_Blvd.png" width="400" height="400">
+    </div>
+    <div class = "albumphotos">
+    <img src = "albums/Beabadoobee_-_Beatopia.png" width="400" height="400">
+    </div>
+    <div class = "albumphotos">
+    <img src = "albums/We_Fell_in_Love_In_October_-_Girl_in_Red.jpg" width="400" height="400">
+    </div>
+    <div class = "albumphotos">
+    <img src = "albums/PinkPantheress_-_To_Hell_with_It.png" width="400" height="400">
+    </div>
+    <div class = "albumphotos">
+    <img src = "albums/Laufey_-_Bewitched.png" width="400" height="400">
+    </div>
+    <div class = "albumphotos">
+    <img src = "albums/Olivia_Rodrigo_-_SOUR.png" width="400" height="400">
+    </div>
+    <div class = "albumphotos">
+    <img src = "albums/Joji_–_Ballads_1.png" width="400" height="400">
+    </div>
+    <div class = "albumphotos">
+    <img src = "albums/Ado_-_Uta's_Songs,_One_Piece_Film_Red.png" width="400" height="400">
+    </div>
+    <div class = "albumphotos">
+    <img src = "albums/dazbee-remindful_two-Cover-Art.jpg" width="400" height="400">
+    </div>
+    <div class = "albumphotos">
+    <img src = "albums/a7312887ae604619fad7be36b3bd0c97.1000x1000x1.jpg" width="400" height="400">
+    </div>
+    <div class = "albumphotos">
+    <img src = "albums/cbcd45e65017179e1f009c3259922c08.1000x1000x1.png" width="400" height="400">
+    </div>
+    <div class = "albumphotos">
+    <img src = "albums/Seventeen_-_Attacca.png" width="400" height="400">
+    </div>
+    <div class = "albumphotos">
+    <img src = "albums/The_Chaos_Chapter_-_Freeze.png" width="400" height="400">
+    </div>
+    <div class = "albumphotos">
+    <img src = "albums/download.jpeg" width="400" height="400">
+    </div>
+    <div class = "albumphotos">
+    <img src = "albums/Ly-her.jpg" width="400" height="400">
+</div>
+    <div class = "albumphotos">
+    <img src = "albums/Black_Pink_-_Square_Up_artwork.png" width="400" height="400">
+</div>
+    <div class = "albumphotos">
+    <img src = "albums/New_Jeans_(EP).jpg" width="400" height="400">
+</div>
+    <div class = "albumphotos">
+    <img src = "albums/Twicetagram_album_cover.png" width="400" height="400">
+</div>
+    <div class = "albumphotos">
+    <img src = "albums/Russian_Roulette,_Red_Velvet_album.png" width="400" height="400"> 
+</div>
+    <div class = "albumphotos">
+    <img src = "albums/piano-concerto-no-1-ballades.webp" width="400" height="400">
+   </div>
+
+    <div class = "albumphotos">
+    <img src = "albums/91UjQknxQ6L._UF1000,1000_QL80_.jpg" width="400" height="400">
+    </div>
+
+    <div class = "albumphotos">
+    <img src = "albums/isata-kanneh-mason-summertime-cover.jpg" width="400" height="400">
+</div>
+    <div class = "albumphotos">
+    <img src = "albums/810aOXdvFqL._UF1000,1000_QL80_.jpg" width="400" height="400">
+</div>
+<div class = "albumphotos">
+    <img src = "albums/Onmyojazz.webp" width="400" height="400">
+</div>
+
+</div>
+
+<style>
+    .albums-container{
+        display: grid;
+        column-gap: 10px;
+        row-gap: 0;
+        grid-template-columns: auto auto auto;
+        background-color: aliceblue;
+    }
+    .albumphotos{
+        margin-left: 8.5%;
+        margin-top: 10%;
+        margin-bottom: 12%;
+    }
+    body {
+  background-color: #1d1d1d;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  max-width: 75%;
+  font-size: 100px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #540032;
+}
+
+.title {
+  background-image: url(albums/18cbdcc5b20c32dca22c554c9b1c8ade.jpg);
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+</style>
+<script>
+    var tl = gsap.timeline({ repeat: -1 });
+tl.to("h1", 30, { backgroundPosition: "-960px 0" });
+</script>
