@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Albums for Productivity</title>
+    <style>
+        body {
+            background-color: #1d1d1d;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1.title {
+            max-width: 75%;
+            font-size: 100px;
+            text-align: center;
+            font-family: "Montserrat", sans-serif;
+            color: #540032;
+            background-image: url(albums/abstract-smooth-brown-wall-background-layout-design-studio-room-web-template-business-report-with-smooth-circle-gradient-color_1258-63523.avif);
+            background-attachment: fixed;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+
+        .albums-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .album {
+            text-align: center;
+        }
+
+        .album img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            cursor: pointer;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 2;
+        }
+
+        .overlay iframe {
+            border-radius: 12px;
+            width: 80%;
+            height: 80%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="title">Albums for Productivity</h1>
+    </div>
+
+    <div class="albums-container">
+        <div class="album">
+            <img src="albums/Lana_Del_Rey_-_Did_You_Know_That_There's_a_Tunnel_Under_Ocean_Blvd.png" onclick="openOverlay('album1')">
+        </div>
+        <!-- Add more album divs as needed -->
+    </div>
+
+    <!-- Curtain screen for albums -->
+    <div class="overlay" id="album1">
+        <span class="closebtn" onclick="closeOverlay('album1')">&times;</span>
+        <iframe src="https://open.spotify.com/embed/album/5HOHne1wzItQlIYmLXLYfZ?utm_source=generator" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <script>
+        function openOverlay(overlayId) {
+            document.getElementById(overlayId).style.display = "block";
+        }
+
+        function closeOverlay(overlayId) {
+            document.getElementById(overlayId).style.display = "none";
+        }
+    </script>
+</body>
+</html>
